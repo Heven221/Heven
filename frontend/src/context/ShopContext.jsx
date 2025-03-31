@@ -43,6 +43,8 @@ const ShopContextProvider = (props)=>{
             cartData[itemId][size] = 1;
 
         }
+        toast.success("Item Added To Cart");
+
         setCartItems(cartData);
 
         if (token) {
@@ -110,6 +112,7 @@ const ShopContextProvider = (props)=>{
             }
         }
         return totalAmount;
+        
     }
 
     const getProductsData = async ()=>{

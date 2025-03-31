@@ -22,7 +22,6 @@ const App = () => {
       <ToastContainer/>
       <Navbar/>
       <SearchBar/>
- <script src="https://bot.orimon.ai/deploy/index.js" tenantId="d00af6b1-a18a-4d6b-a312-78a2bfa46356"></script>
 
 
 

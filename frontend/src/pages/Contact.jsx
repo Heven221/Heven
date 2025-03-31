@@ -18,7 +18,7 @@ const Contact = () => {
 
           <p className='font-semibold text-xl text-gray-600 '> Our Store</p>
           <p className='text-gray-500 '>143 cable bridge <br />hitech-city, Hyderabad , Telangana</p>
-          <p className='text-gray-500'>Tel: (+91) 1234567890 <br />Email: heven.storess@gmail.com</p>
+          <p className='text-gray-500'>Tel: (+91) 8247349814 <br />Email: heven.storess@gmail.com</p>
           <p className='font-semibold text-xl text-gray-600'>Careers at Heven</p>
           <p className='text-gray-500 '>Learn more about our Teams And job Openings</p>
 

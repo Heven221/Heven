@@ -7,7 +7,7 @@ const NewLetterBox = () => {
     }
   return (
     <div className='text-center'>
-        <p className='text-2xl font-medium text-gray-800'>Subscribe now and get 20% off</p>
+        <p className='text-2xl font-medium text-gray-800'>Subscribe now and Know Discounts Earlier</p>
 
         <p className='text-gary-400 mt-3'>
             Be the part  of <strong>HEVEN</strong> and Avail Unlimited Offers!!

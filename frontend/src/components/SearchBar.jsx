@@ -13,7 +13,7 @@ const SearchBar = () => {
              setVisible(true);
            }           
            else{
-            setVisible(true);
+            setVisible(false);
            }
       },[location])
 

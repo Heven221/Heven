@@ -10,7 +10,7 @@ const NewLetterBox = () => {
     const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
+    emailjs 
       .sendForm('service_1rgxjnx', 'template_uvw82mq', form.current, {
         publicKey: 'ED9P8DOenZXg7wLbq',
       })

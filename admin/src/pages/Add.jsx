@@ -14,6 +14,7 @@ const Add = ({token}) => {
 
    const [name,setName] = useState("");
    const [description,setDescription] = useState("");
+   const [actualPrice,setactualPrice] = useState("");   
    const [price,setPrice] = useState("");
    const [category,setCategory] = useState("Men");
    const [subCategory,setSubCategory] = useState("Topwear");
@@ -29,6 +30,7 @@ const Add = ({token}) => {
 
               formData.append("name",name)
               formData.append("description",description)
+              formData.append("actualPrice",actualPrice)
               formData.append("price",price)
               formData.append("category",category)
               formData.append("subCategory",subCategory)
@@ -53,6 +55,8 @@ const Add = ({token}) => {
               setImage3(false)
               setImage4(false)
               setPrice('')
+              setactualPrice('')
+
             }else{
               toast.error(response.data.message)
               }
@@ -120,6 +124,10 @@ const Add = ({token}) => {
               <option value="Footwear">Foot Wear</option>
 
             </select>
+        </div>
+         <div>
+          <p className='mb-2'>Actual Price</p>
+          <input onChange={(e)=>setactualPrice(e.target.value)} value={actualPrice} className='w-full px-3 py-2 sm:w-[120px]' type="number" placeholder='Price in INR' />
         </div>
         <div>
           <p className='mb-2'>Product Price</p>

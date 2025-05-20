@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 
 const NewLetterBox = () => {
-
+   
      const form = useRef();
 
     const sendEmail = (e) => {

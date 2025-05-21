@@ -81,7 +81,7 @@ const Navbar = () => {
                 <NavLink onClick={()=>setVisible(false)}className='py-4 pl-6 border'to='/orders'>Orders</NavLink>
                 <NavLink onClick={()=>setVisible(false)}className='py-4 pl-6 border'to='/about'>ABOUT</NavLink>
                 <NavLink onClick={()=>setVisible(false)}className='py-4 pl-6 border'to='/contact'>CONTACT</NavLink>
-                <p onClick={logout} className='cursor-pointer hover:text-black'>Logout</p>
+                <p onClick={logout} className='cursor-pointer  font-bold text-3xl hover:text-black'>Logout</p>
 
 
 

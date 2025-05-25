@@ -61,6 +61,7 @@ const Product = () => {
 
                  </div>
                  <p className='mt-5 text-3xl font-medium'>Actual Price: {currency}<del>{productData.actualPrice}</del></p>
+                  <p className='mt-5 text-3xl font-medium'>Actual Price: {currency}<del>{productData.actualPrice}</del></p>
                  <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
                  <p className='mt-5 text-gray-500 md:w-4/5 '>{productData.description}</p>
 

@@ -44,7 +44,10 @@ const ShopContextProvider = (props)=>{
 
         }
         toast.success("Item Added To Cart");
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         setCartItems(cartData);
 
         if (token) {
@@ -111,8 +114,19 @@ const ShopContextProvider = (props)=>{
                 }
             }
         }
+<<<<<<< Updated upstream
         return totalAmount;
         
+=======
+        try {
+            if(totalAmount < delivery_fee){
+                return totalAmount;
+
+            }
+        } catch (error) {
+            
+        }        
+>>>>>>> Stashed changes
     }
 
     const getProductsData = async ()=>{

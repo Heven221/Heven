@@ -53,7 +53,7 @@ const List = ({token}) => {
           <b>Image</b>
           <b>Name</b>
           <b>Category</b>
-          <b>Price</b>
+          <b> Selling Price</b>
           <b className='text-center'>Action</b>
         </div>
         {/* product list  */}

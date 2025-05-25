@@ -14,7 +14,11 @@ const Add = ({token}) => {
 
    const [name,setName] = useState("");
    const [description,setDescription] = useState("");
+
    const [actualPrice,setactualPrice] = useState("");   
+
+   const [actualPrice,setactualPrice] = useState("");
+   
    const [price,setPrice] = useState("");
    const [category,setCategory] = useState("Men");
    const [subCategory,setSubCategory] = useState("Topwear");
@@ -54,6 +58,7 @@ const Add = ({token}) => {
               setImage2(false)
               setImage3(false)
               setImage4(false)
+              setactualPrice('')
               setPrice('')
               setactualPrice('')
 
@@ -130,7 +135,11 @@ const Add = ({token}) => {
           <input onChange={(e)=>setactualPrice(e.target.value)} value={actualPrice} className='w-full px-3 py-2 sm:w-[120px]' type="number" placeholder='Price in INR' />
         </div>
         <div>
-          <p className='mb-2'>Product Price</p>
+          <p className='mb-2'>Actual Price</p>
+          <input onChange={(e)=>setactualPrice(e.target.value)} value={actualPrice} className='w-full px-3 py-2 sm:w-[120px]' type="number" placeholder='Price in INR' />
+        </div>
+         <div>
+          <p className='mb-2'>Selling Price</p>
           <input onChange={(e)=>setPrice(e.target.value)} value={price} className='w-full px-3 py-2 sm:w-[120px]' type="number" placeholder='Price in INR' />
         </div>
       </div>

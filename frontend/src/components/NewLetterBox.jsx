@@ -7,10 +7,19 @@ const NewLetterBox = () => {
    
      const form = useRef();
 
+
     const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs 
+
+     const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+
       .sendForm('service_1rgxjnx', 'template_uvw82mq', form.current, {
         publicKey: 'ED9P8DOenZXg7wLbq',
       })
@@ -41,5 +50,5 @@ const NewLetterBox = () => {
     </div>
   )
 }
-
+}
 export default NewLetterBox 

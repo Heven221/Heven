@@ -26,7 +26,7 @@ const Footer = () => {
                     <li><Link to='/contact'>About Us</Link></li>
                     <li><Link to='/orders'>Delivery</Link></li>
                     <li><Link to='/about'>Privacy Policy</Link></li>
-                   <li><Link to='/about'>Privacy Policy</Link></li>
+                   <li><Link to='https://www.instagram.com/accounts/edit/?hl=en'>Instagram</Link></li>
                 </ul>
              </div>
              <div>

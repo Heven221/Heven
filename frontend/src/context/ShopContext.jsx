@@ -44,10 +44,7 @@ const ShopContextProvider = (props)=>{
 
         }
         toast.success("Item Added To Cart");
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
         setCartItems(cartData);
 
         if (token) {

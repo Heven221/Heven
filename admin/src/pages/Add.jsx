@@ -17,8 +17,7 @@ const Add = ({token}) => {
 
    const [actualPrice,setactualPrice] = useState("");   
 
-   const [actualPrice,setactualPrice] = useState("");
-   
+
    const [price,setPrice] = useState("");
    const [category,setCategory] = useState("Men");
    const [subCategory,setSubCategory] = useState("Topwear");

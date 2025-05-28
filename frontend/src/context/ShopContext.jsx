@@ -111,10 +111,7 @@ const ShopContextProvider = (props)=>{
                 }
             }
         }
-<<<<<<< Updated upstream
-        return totalAmount;
-        
-=======
+
         try {
             if(totalAmount < delivery_fee){
                 return totalAmount;
@@ -123,7 +120,7 @@ const ShopContextProvider = (props)=>{
         } catch (error) {
             
         }        
->>>>>>> Stashed changes
+
     }
 
     const getProductsData = async ()=>{

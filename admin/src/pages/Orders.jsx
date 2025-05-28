@@ -67,6 +67,7 @@ const Orders = ({ token }) => {
           className="p-2 w-full sm:w-1/2 border border-gray-400 rounded-md"
         />
       </div>
+      </div>
 
     <div>
       <h3>Order Page</h3>

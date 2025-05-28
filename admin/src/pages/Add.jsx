@@ -15,7 +15,6 @@ const Add = ({token}) => {
    const [name,setName] = useState("");
    const [description,setDescription] = useState("");
 
-   const [actualPrice,setactualPrice] = useState("");   
 
 
    const [price,setPrice] = useState("");

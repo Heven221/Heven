@@ -49,26 +49,9 @@ const Orders = ({ token }) => {
   useEffect(() => {
     fetchAllOrders();
   }, [token])
-// Filter orders based on search query
-  const filteredOrders = orders.filter(order =>
-    order._id.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+
 
   return (
-    <div>
-      <h3 className="text-xl font-semibold mb-4">Order Page</h3>
-
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by Order ID"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="p-2 w-full sm:w-1/2 border border-gray-400 rounded-md"
-        />
-      </div>
-      </div>
-
     <div>
       <h3>Order Page</h3>
       <div>
@@ -126,3 +109,4 @@ const Orders = ({ token }) => {
 }
 
 export default Orders
+

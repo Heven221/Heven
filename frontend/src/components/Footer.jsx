@@ -5,7 +5,6 @@ import { Link, NavLink } from 'react-router-dom'
 
    
 const Footer = () => {
-   const Contact = () => {
   function btnClick() {
         window.open("https://www.instagram.com/heven_designs/?hl=en");
     }

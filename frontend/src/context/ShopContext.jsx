@@ -7,7 +7,7 @@ import axios from 'axios'
 
 
 export const ShopContext = createContext();
-       
+
 const ShopContextProvider = (props)=>{
     const currency = '₹ ';
     const delivery_fee = 10;
@@ -44,8 +44,7 @@ const ShopContextProvider = (props)=>{
 
         }
         toast.success("Item Added To Cart");
-
-        setCartItems(cartData);
+                setCartItems(cartData);
 
         if (token) {
             try {
@@ -110,9 +109,9 @@ const ShopContextProvider = (props)=>{
                     
                 }
             }
-        }
-
-        try {
+        }        return totalAmount;
+        
+       try {
             if(totalAmount < delivery_fee){
                 return totalAmount;
 
@@ -120,8 +119,7 @@ const ShopContextProvider = (props)=>{
         } catch (error) {
             
         }        
-
-    }
+        }
 
     const getProductsData = async ()=>{
         try {

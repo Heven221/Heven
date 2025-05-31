@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams , useNavigate} from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
 import RelatedProducts from '../components/RelatedProducts';
+import { toast,ToastContainer } from 'react-toastify';
 
 const Product = () => {
    
@@ -13,6 +14,16 @@ const Product = () => {
   const [productData,setProductData] = useState(false);
   const [image,setImage] = useState('')
   const [size,setSize] = useState('');
+
+ const navigate = useNavigate();
+ const handleBuyNow = () => {
+  if (!size) {
+    toast.error("Please select a size before purchasing.");
+    return;
+  }
+  addTOCart(productData._id, size);
+  navigate('/Cart');
+}
 
 
   const fetchProductData = async()=>{
@@ -60,8 +71,7 @@ const Product = () => {
                     <p className='pl-2'>(122)</p>
 
                  </div>
-                 <p className='mt-5 text-3xl font-medium'>Actual Price: {currency}<del>{productData.actualPrice}</del></p>
-                  <p className='mt-5 text-3xl font-medium'>Actual Price: {currency}<del>{productData.actualPrice}</del></p>
+                <p className='mt-5 text-3xl font-medium'>Actual Price: {currency}<del>{productData.actualPrice}</del></p>
                  <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
                  <p className='mt-5 text-gray-500 md:w-4/5 '>{productData.description}</p>
 
@@ -80,7 +90,10 @@ const Product = () => {
                  </div>
 
                  <button onClick={()=>addTOCart(productData._id,size)} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>Add To Cart</button>
+                 <br /><br />
+                 <button onClick={handleBuyNow}  className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>Buy    Now</button>
                     <hr className='mt-8 sm:w-4/5'/>
+                    
 
                     <div className='text-sm text-gray-500 mt-5 flex  flex-col gap-1'>
 
@@ -123,3 +136,4 @@ const Product = () => {
 }
 
 export default Product
+

@@ -5,7 +5,7 @@ import razopay from 'razorpay'
 
 // global varibles
 const currency = 'inr'
-const delivery_fee = 10
+const delivery_fee = 69
 
 
 //gateway initialize

@@ -25,6 +25,8 @@ const Orders = () => {
                 item['payment'] = order.payment
                 item['paymentMethod'] = order.paymentMethod
                 item['date'] = order.date
+                item['_id'] = order._id
+
 
                 allOrdersItem.push(item)
 
